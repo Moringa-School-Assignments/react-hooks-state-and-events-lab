@@ -8,6 +8,7 @@ function ShoppingList({ items }) {
     let filteredArray = selectedCategory.filter(item =>  e.target.value === item.category)
     console.log(filteredArray)
     setSelectedCategory(filteredArray)
+    // setSelectedCategory(selectedCategory => filteredArray ? filteredArray : selectedCategory)
   }
   console.log(selectedCategory);
 
